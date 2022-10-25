@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16656212373510" configfile="/ProyJSF02/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="inicio.xhtml" id="pf16666306913520" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" outlinks="pf16666306913531 pf16666358767417" inlinks="pf16666348017874 pf16666363580419" path="/inicio.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="contactos.xhtml" x="96" y="240" id="pf16666306913532" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf16666348017874 pf166663683318711" inlinks="pf16666306913531 pf166663661346310" path="/contactos.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="AcercaDe.xhtml" x="384" y="84" id="pf16666358767428" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" outlinks="pf16666363580419 pf166663661346310" inlinks="pf16666358767417 pf166663683318711" path="/AcercaDe.xhtml"/>
+  <links id="pf16666306913531" target="pf16666306913532" source="pf16666306913520" outcome="contactos"/>
+  <links id="pf16666348017874" target="pf16666306913520" source="pf16666306913532" outcome="inicio"/>
+  <links id="pf16666358767417" target="pf16666358767428" source="pf16666306913520" outcome="acerca"/>
+  <links id="pf16666363580419" target="pf16666306913520" source="pf16666358767428" outcome="inicio1"/>
+  <links id="pf166663661346310" target="pf16666306913532" source="pf16666358767428" outcome="contactos1"/>
+  <links id="pf166663683318711" target="pf16666358767428" source="pf16666306913532" outcome="acerca1"/>
+</pageflow:Pageflow>

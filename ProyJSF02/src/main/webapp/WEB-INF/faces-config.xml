@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+    <navigation-rule>
+    	<from-view-id>/inicio.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>contactos</from-outcome>
+    		<to-view-id>/contactos.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+    	<from-view-id>/contactos.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>inicio</from-outcome>
+    		<to-view-id>/inicio.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+    	<from-view-id>/inicio.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>acerca</from-outcome>
+    		<to-view-id>/AcercaDe.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+    	<from-view-id>/AcercaDe.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>inicio1</from-outcome>
+    		<to-view-id>/inicio.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+    	<from-view-id>/AcercaDe.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>contactos1</from-outcome>
+    		<to-view-id>/contactos.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+    	<from-view-id>/contactos.xhtml</from-view-id>
+    	<navigation-case>
+    		<from-outcome>acerca1</from-outcome>
+    		<to-view-id>/AcercaDe.xhtml</to-view-id>
+    	</navigation-case>
+    </navigation-rule>
+    
+</faces-config>

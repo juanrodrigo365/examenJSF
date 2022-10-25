@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<interceptors>
+		<class>com.pepe.interceptores.TiempoInterceptor</class>
+	</interceptors>
+	<interceptors>
+		<class>com.pepe.interceptores.TextoInterceptor</class>
+	</interceptors>
+</beans>

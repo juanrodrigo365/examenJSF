@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+  <title>Contactos</title>
+  <h:outputStylesheet library="css" name="bootstrap.min.css"></h:outputStylesheet>
+	<h:outputScript library="js" name="bootstrap.min.js"></h:outputScript>
+</h:head>
+<h:body>
+		
+		
+		<table border = "0" width="100%">
+		<tr>
+			<td style="width: 15%;">
+				<table>
+					<tr>
+						<td>Usuario</td>
+						<td>#{loginManagedBean.username}</td>
+					</tr>
+					<tr>
+						<td>Contraseña</td>
+						<td>#{loginManagedBean.password}</td>
+					</tr>
+				</table>
+			</td>
+			<td style="width: 85%;"><h1>Contactos</h1></td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<h:form id="formContactos">
+					<h:commandButton value="Inicio" id="btn-contactos" action="inicio" class="btn btn-primary block"/>
+				</h:form>
+				<h:form id="formAcerca1">
+					<h:commandButton value="Acerca de" id="btn-acreca1" action="acerca1" class="btn btn-primary block"/>
+				</h:form>
+			</td>
+			<td>
+				
+				<h3>Formulario de registro</h3>
+		<h:form>
+			<table border="0" width="50%">
+				<tr>
+					<td>Correo Electrónico:</td>
+					<td><h:inputText value="#{contactosManagedBean.contactos.correo}" class="form-control"></h:inputText></td>
+				</tr>
+				<tr>
+					<td>Mensaje:</td>
+					<td>
+						<h:inputTextarea cols="22" rows="5" value="#{contactosManagedBean.contactos.mensaje}" class="form-control"></h:inputTextarea>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><h:commandButton value="Enviar" action="#{contactosManagedBean.registrar()}" class="btn btn-success btn-sm"></h:commandButton></td>
+				</tr>
+			</table>
+		</h:form>
+				
+			</td>
+		</tr>
+	</table>
+
+		
+</h:body>
+
+
+
+</html>
